@@ -19,10 +19,6 @@ body{
     margin: 0 auto;
 }
 
-ul{
-    list-style: none;
-}
-
 a {
     text-decoration: none;
     color: white;
@@ -82,8 +78,9 @@ header img{
     object-fit: contain;
 }
 
-.header-menu{
+.menu{
     gap: 10px;
+    list-style: none;
 }
 
 /* main */
@@ -96,6 +93,7 @@ main > div.center-container{
     row-gap: 30px;
 }
 
+/* scheda prodotto top */
 
 .scheda-prodotto{
     position: relative;
@@ -146,6 +144,8 @@ main > div.center-container{
     display: none;
 }
 
+/* scheda prodotto bottom */
+
 main .scheda-prodotto > span:first-of-type{
     color: red;
     font-size: 12px;
@@ -160,6 +160,7 @@ main .scheda-prodotto > span:last-child{
 
 
 /* hover scheda prodotto */
+
 .scheda-prodotto:hover .heart{
     color: red;
 }
