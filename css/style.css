@@ -53,7 +53,7 @@ h3{
 
 header{
     background-color: rgb(255, 96, 35);
-    padding:20px;
+    padding:20px 0;
     height: 75px;
     width: 100%;
     position: fixed;
