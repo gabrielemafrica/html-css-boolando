@@ -1,0 +1,97 @@
+/* general */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.flex{
+    display: flex;
+}
+
+
+.center-container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+ul{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+i:hover {
+    cursor: pointer;
+    color: aquamarine;
+}
+
+
+/* header */
+
+header{
+    background-color: rgb(255, 96, 35);
+    padding:20px;
+    height: 75px;
+    width: 100%;
+    position: fixed;
+    color: white;
+}
+
+header > div.flex{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo{
+    height: 35px;
+}
+
+header img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.header-menu{
+    gap: 10px;
+}
+
+/* main */
+
+main > div.center-container{
+    flex-wrap: wrap;
+}
+
+
+.scheda-prodotto{
+    background-color: blueviolet;
+    border: 2px solid gray;
+    width: calc(100%/3);
+    height: 500px;
+    gap: 10px;
+}
+
+/* footer */
+
+footer{
+    background-color: rgb(255, 96, 35);
+    padding:20px;
+    height: 75px;
+    width: 100%;
+    position: fixed;
+    color: white;
+}
+
+
