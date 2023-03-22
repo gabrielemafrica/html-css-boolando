@@ -37,6 +37,11 @@ i:hover {
     color: aquamarine;
 }
 
+h6{
+    font-size: 12px;
+    color: gray;
+}
+
 
 /* header */
 
@@ -46,6 +51,8 @@ header{
     height: 75px;
     width: 100%;
     position: fixed;
+    top: 0;
+    left: 0;
     color: white;
 }
 
@@ -72,26 +79,97 @@ header img{
 
 main > div.center-container{
     flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 60px 0;
+    margin-top: 75px;
+    row-gap: 30px;
 }
 
 
 .scheda-prodotto{
-    background-color: blueviolet;
-    border: 2px solid gray;
-    width: calc(100%/3);
-    height: 500px;
-    gap: 10px;
+    position: relative;
+    width: calc((100%/3) - 15px);
+    cursor: pointer;
 }
+
+.scheda-prodotto img{
+    width: 100%;
+}
+
+.scheda-prodotto .on-hover{
+    display: none;
+}
+
+.heart{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    background-color: white;
+    padding: 5px 10px;
+    font-size: 20px;
+}
+
+.etichette{
+    position: absolute;
+    left: 0;
+    bottom: 90px;
+    color: white;
+    font-size: 10px;  
+}
+
+.etichette span:first-child{
+    margin-right: 3px;
+}
+
+.sconto{
+    background-color: red;
+    padding: 5px 10px;
+}
+
+.sostenibilita{
+    background-color: green;
+    padding: 5px 10px;
+}
+
+main .scheda-prodotto > span:first-of-type{
+    color: red;
+    font-size: 12px;
+}
+
+main .scheda-prodotto > span:last-child{
+    color: gray;
+    font-size: 12px;
+    text-decoration: line-through;
+    
+}
+
+
+/* hover scheda prodotto */
+.scheda-prodotto:hover .heart{
+    color: red;
+}
+
+.scheda-prodotto:hover .on-hover{
+    display: inline-block;
+}
+
+.scheda-prodotto:hover .off-hover{
+    display: none;
+}
+
+
 
 /* footer */
 
 footer{
-    background-color: rgb(255, 96, 35);
+    background-color: rgb(26, 26, 26);
     padding:20px;
-    height: 75px;
+    height: 80px;
     width: 100%;
-    position: fixed;
     color: white;
 }
 
 
+footer > div.center-container{
+    justify-content: space-between;
+}
